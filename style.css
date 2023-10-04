@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  margin: 0%;
+}
+
+.sidebar{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  Overflow-x: hidden;
+}
+
+.sidebar p{
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+/*todos os botoes da tela*/
+button{
+  background-color: #111;
+  color: white;
+  width: 200px;
+  padding: 16px;
+  font-size: 16px;
+  display: block;
+  border: none;
+}
+
+button:hover,.sidebar a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+/*Botoes cidades*/
+.cidAc, .cidAl, .cidAp, .cidAm, .cidBa, .cidCe, .cidEs, .cidGo, .cidMa, .cidMt, .cidMs, .cidMg, .cidPa, .cidPb, .cidPr, .cidPe, .cidPi, .cidRj, .cidRn, .cidRs, .cidRo, .cidRr, .cidSc, .cidSp, .cidSe, .cidTo, .cidDf {
+  display: none;
+  position: absolute;
+  background-color: #ddd;
+  min-width: 200px;
+}
+
+.cidAc a, .cidAl a, .cidAp a, .cidAm a, .cidBa a, .cidCe a, .cidEs a, .cidGo a, .cidMa a, .cidMt a, .cidMs a, .cidMg a, .cidPa a, .cidPb a, .cidPr a, .cidPe a, .cidPi a, .cidRj a, .cidRn a, .cidRs a, .cidRo a, .cidRr a, .cidSc a, .cidSp a, .cidSe a, .cidTo a, .cidDf a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.acree:hover .cidAc, .alagoass:hover .cidAl, .amapaa:hover .cidAp, .amazonass:hover .cidAm, .bahiaa:hover .cidBa, .cearaa:hover .cidCe, .espsantoo:hover .cidEs, .goiass:hover .cidGo, .maranhaoo:hover .cidMa, .matogrossoo:hover .cidMt, .matogrossosull:hover .cidMs, .minasgeraiss:hover .cidMg, .paraa:hover .cidPa, .paraibaa:hover .cidPb, .paranaa:hover .cidPr, .pernambucoo:hover .cidPe, .piauii:hover .cidPi, .riodejaneiroo:hover .cidRj, .riograndenortee:hover .cidRn, .riograndesull:hover .cidRs, .rondoniaa:hover .cidRo, .roraimaa:hover .cidRr, .santacatarinaa:hover .cidSc, .saopauloo:hover .cidSp, .sergipee:hover .cidSe, .tocantinss:hover .cidTo, .distritofederall:hover .cidDf {
+  display: block; 
+  background-color: #e8e8e8;
+}
+
+.acree:hover .acre, .alagoass:hover .alagoas, .amapaa:hover .amapa, .amazonass:hover .amazonas, .bahiaa:hover .bahia, .cearaa:hover .ceara, .espsantoo:hover .espsanto, .goiass:hover .goias, .maranhaoo:hover .maranhao, .matogrosso:hover .matogrosso, .matogrossosull:hover .matogrossosul, .minasgeraiss:hover .minasgerais, .paraa:hover .para, .paraibaa:hover .paraiba, .paranaa:hover .parana, .pernambucoo:hover .pernambuco, .piauii:hover .piaui, .riodejaneiroo:hover .riodejaneiro, .riograndenortee:hover .riograndenorte, .riograndesull:hover .riograndesul, .rondoniaa:hover .rondonia, .roraimaa:hover .roraima, .santacatarinaa:hover .santacatarina, .saopauloo:hover .saopaulo, .sergipee:hover .sergipe, .tocantinss:hover .tocantins, .distritofederall:hover .distritofederal {
+  background-color: #ddd; 
+  color: black;
+}
+
+.content{
+  margin-left: 200px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+img{
+  height: 500px;
+  width: 500px;
+}
+
+.bottombar{
+  position: fixed;
+  z-index: 1;
+  bottom: 20px;
+  right: 20px;
+}
+
+.sobrenos:hover, .contato:hover{
+  cursor: pointer;
+}
