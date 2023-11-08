@@ -1,0 +1,26 @@
+CREATE TABLE Pessoa (
+  cpf integer PRIMARY KEY,
+  nome varchar(255),
+  sobrenome varchar(255),
+  idade integer
+);
+
+CREATE TABLE Estado (
+  id_estado integer PRIMARY KEY,
+  nome varchar(255),
+  tamanho double,
+  criacao date,
+  populacao integer
+);
+
+CREATE TABLE Cidade (
+  id_cidade integer PRIMARY KEY,
+  nome varchar(255),
+  tamanho double,
+  populacao integer,
+  criacao date
+);
+
+ALTER TABLE Cidade ADD FOREIGN KEY (id_cidade) REFERENCES Estado (id_estado);
+
+ALTER TABLE Pessoa ADD FOREIGN KEY (cpf) REFERENCES Cidade (id_cidade);
